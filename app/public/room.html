@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room</title>
+
+    <style type="text/css">
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(4, 136, 212);
+    }
+    .room-name {
+        color: white;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .chat-box{
+        background-color: white;
+        width: 90%;
+        height: 75vh;
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+        align-items: flex-start;
+        padding-bottom: 10px;
+    }
+    .input-section {
+        width: 20rem;
+    }
+    </style>
+    <body>
+</head>
+<body>
+    <h1 style="height: 5vh;" class="room-name"></h1>
+<div class="chat-box">
+    <h1 class="is-typing" style="font-size: 70%; font-weight: 100; text-align: center; margin-top: 20px; align-self: center;"></h1>
+</div>
+<div style="display: flex; justify-content: center; align-items: center; margin-top: 3vh; width: 90%; height: 5vh;" class="input-section"><input style="height: 3rem; padding: 5px; width: 70%; outline-width: 0;" type="text" placeholder="message"> <button style="padding: 10px;
+    box-sizing: border-box;
+    border: 0px;
+    height: 3rem;
+    outline-width: 0px;">Send</button></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.6.0/qs.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/script.js"></script>
+</body>
+</html>
